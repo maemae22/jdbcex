@@ -3,9 +3,9 @@ CREATE TABLE tbl_todo (
                           title varchar(100) NOT NULL,
                           dueDate date not null,
                           finished tinyint default 0
-)
+);
 
-    INSERT into tbl_todo (title, dueDate, finished) VALUES ('Test...', '2022-12-31', 1);
+INSERT into tbl_todo (title, dueDate, finished) VALUES ('Test...', '2022-12-31', 1);
 
 SELECT * FROM tbl_todo;
 
