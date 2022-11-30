@@ -42,6 +42,8 @@ public class TodoReadController extends HttpServlet {
 
             if (!exist) { // exist가 false일 때 실행
                 todoListStr += tno + "-";
+
+                // 쿠키를 변경할 때에는 다시 경로나 유효시간을 세팅해야 한다 !!
                 viewTodoCookie.setValue(todoListStr);
                 viewTodoCookie.setMaxAge(60*60*24); // 24시간
                 viewTodoCookie.setPath("/");
