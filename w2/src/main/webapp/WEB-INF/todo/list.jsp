@@ -7,6 +7,7 @@
 </head>
 <body>
 <h1>Todo List</h1>
+<h2>ServletContext에 저장되어 있는 appName : ${appName}</h2>
 <h2>로그인 정보 : ${loginInfo}</h2>
 <h3>회원 이름 : ${loginInfo.mname}</h3>
 
